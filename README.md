@@ -16,6 +16,7 @@ A high-performance, cryptographically secure utility for generating clean, URL-f
 
 
 ![Build Status](https://img.shields.io/github/actions/workflow/status/timtjoe/localuid/publish.yaml?style=flat-square)
+![CI Status](https://img.shields.io/github/actions/workflow/status/timtjoe/localuid/main.yml?label=tests&style=flat-square)
 ![Snyk Security](https://img.shields.io/snyk/vulnerabilities/npm/localuid?style=flat-square)
 ![Security Score](https://img.shields.io/badge/security-hardened-success?style=flat-square)
 

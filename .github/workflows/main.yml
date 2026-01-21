@@ -1,1 +1,34 @@
 
+name: CI - Test & Validate
+
+on:
+  push:
+    branches: [ master, develop ]
+  pull_request:
+    branches: [ master, develop ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Install Dependencies
+        run: bun install
+
+      - name: Lint Code
+        # This checks if your code follows strict TS rules
+        run: bun x tsc --noEmit
+
+      - name: Run Secure Test Suite
+        # Runs the localuid.test.ts file we created
+        run: bun test
+
+      - name: Verify Build Artifacts
+        # Ensures the library can actually compile to /dist
+        run: bun run build
