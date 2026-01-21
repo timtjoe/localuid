@@ -1,6 +1,6 @@
 {
   "name": "localuid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A high-performance, cryptographically secure utility for generating clean, URL-friendly identifiers. Optimized for Bun and TypeScript environments.",
   "licenses": [
     {
