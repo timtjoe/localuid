@@ -2,6 +2,12 @@
   "name": "localuid",
   "version": "1.0.0",
   "description": "A high-performance, cryptographically secure utility for generating clean, URL-friendly identifiers. Optimized for Bun and TypeScript environments.",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  ],
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",

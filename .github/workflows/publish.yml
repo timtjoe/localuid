@@ -8,9 +8,13 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Required to create a GitHub Release
     steps:
       - uses: actions/checkout@v4
-      
+        with:
+          fetch-depth: 0 # Fetches all history for accurate release notes
+
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
         with:
@@ -24,6 +28,15 @@ jobs:
 
       - name: Build
         run: bun run build
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          # This pulls your README or a specific description if you want
+          body: "New version of localuid is live! See the changes below."
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish to NPM
         run: npm publish
