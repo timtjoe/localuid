@@ -1,7 +1,3 @@
-Here is the refined **README.md**. I have updated the tone to be more professional and versatile, focusing on the library's technical strengths (security, collision resistance, and URL-friendliness) without positioning it against other technologies.
-
----
-
 # localuid
 
 A high-performance, cryptographically secure utility for generating clean, URL-friendly identifiers. Optimized for **Bun** and **TypeScript**.
