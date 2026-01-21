@@ -1,0 +1,38 @@
+{
+  "name": "localuid",
+  "version": "1.0.0",
+  "description": "Secure, collision-resistant URL-friendly unique identifiers for Bun and TypeScript.",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "test": "bun test",
+    "prepublishOnly": "bun run build",
+    "build": "bun build ./src/index.ts --outdir ./dist --target bun && tsc --emitDeclarationOnly"
+  },
+  "devDependencies": {
+    "bun-types": "^1.3.6",
+    "typescript": "^5.9.3"
+  },
+  "keywords": [
+    "uid",
+    "id-generator",
+    "shortid",
+    "url-friendly",
+    "bun",
+    "typescript"
+  ],
+  "author": "Timothy T. Joe | @timtjoe",
+  "license": "MIT"
+}
