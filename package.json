@@ -1,7 +1,7 @@
 {
   "name": "localuid",
   "version": "1.0.0",
-  "description": "Secure, collision-resistant URL-friendly unique identifiers for Bun and TypeScript.",
+  "description": "A high-performance, cryptographically secure utility for generating clean, URL-friendly identifiers. Optimized for Bun and TypeScript environments.",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",

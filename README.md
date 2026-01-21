@@ -1,3 +1,36 @@
+
+### 🚀 Popularity & Reach
+
+
+![NPM Downloads](https://img.shields.io/npm/dt/localuid?style=flat-square&color=brightgreen)
+![NPM Monthly Downloads](https://img.shields.io/npm/dm/localuid?style=flat-square&color=chartreuse)
+![NPM Weekly Downloads](https://img.shields.io/npm/dw/localuid?style=flat-square&color=blue)
+
+
+### 💎 Engineering Quality
+
+![Bundle Size](https://img.shields.io/bundlephobia/min/localuid?style=flat-square&color=blueviolet)
+![Dependencies](https://img.shields.io/badge/dependencies-0-success?style=flat-square)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue?style=flat-square&logo=typescript)
+![Runtime](https://img.shields.io/badge/Runtime-Bun-black?style=flat-square&logo=bun)
+
+
+### 🛡️ Security & Reliability
+
+
+![Build Status](https://img.shields.io/github/actions/workflow/status/timtjoe/localuid/publish.yml?style=flat-square)
+![Snyk Security](https://img.shields.io/snyk/vulnerabilities/npm/localuid?style=flat-square)
+![Security Score](https://img.shields.io/badge/security-hardened-success?style=flat-square)
+
+
+### 🌟 Social Proof
+
+![GitHub stars](https://img.shields.io/github/stars/timtjoe/localuid?style=social)
+![GitHub forks](https://img.shields.io/github/forks/timtjoe/localuid?style=social)
+![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftimtjoe%2Flocaluid&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)
+
+
+
 # localuid
 
 A high-performance, cryptographically secure utility for generating clean, URL-friendly identifiers. Optimized for **Bun** and **TypeScript**.
